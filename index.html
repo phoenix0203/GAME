@@ -6,43 +6,24 @@
     <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+    #main{
+        text-align: center;
+    }
+
+    
+
+
+
+    </style>
+    
+    
     <title>GAME</title>
 </head>
 <body>
-    <!--主頁面-->
-    <div data-role="page" id="main">
-
-        <div data-role="header">
-
-            <h1>遊戲</h1>
-
-        </div><!-- /header -->
-
-        <div role="main" class="ui-content">
-
-            <h1>遊戲</h1>
-
-            <div data-role="controlgroup" data-type="horizontal">
-            <a href="#page1" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">類型</a>
-            <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">比賽</a>
-            <a href="#aboutus" data-role="button" data-transition="fade"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">關於我們</a>
-            <div data-role="collapsible">
-        </div>
-        </div>
-        
-
-        </div><!-- /content -->
-
-        <div data-role="footer">
-
-            <h4>Copyright &copy;1108211061@wenzao DACM</h4>
-
-        </div><!-- /footer -->
-
-    </div><!-- /page -->
     
     <!--第一頁-->
-    <div data-role="page" id="page1">
+    <div data-role="page" id="main">
         <div data-role="panel" id="panel01">
             <h2>各類型遊戲</h2>
             <p>點擊下方了解各個遊戲吧!</p>
@@ -52,40 +33,66 @@
         <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
         <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
         </div> 
+        <div data-role="panel" id="panel03">
+            <h2>各類型遊戲</h2>
+            <p>點擊下方了解各個遊戲吧!</p>
+            
+        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">ACT (動作類遊戲)</a>
+        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">AVG (冒險類遊戲)</a>
+        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">PUZ (休閒益智類遊戲)</a>
+        <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">SLG (策略類遊戲)</a>
+        </div> 
         <div data-role="header">
-            <a href="#main" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
-            <h1>類別</h1>
+ 
+            <h1>GAME</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <P>這邊給各位介紹遊戲種類的說明與推薦</P>
+
+            <img src="img/01.jpg"alt=""style="display:block; margin:auto;">
+
+        <h1>遊戲</h1>
+            <h2>線上遊戲</h2>
+            <p>這邊跟各位介紹一下線上遊戲類型吧!</p>
         <a href="#panel01" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
+            <h2>手機遊戲</h2>
+            <p>這邊跟各位介紹一下手機遊戲類型吧!</p>
+        <a href="#panel03" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
     </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
 
             <h4>Copyright &copy;1108211061@gap.wzu.edu.tw</h4>
 
+            <div data-role="navbar">
+                <ul>
+                  <li><a href="#main"data-icon="home">主頁</a></li>
+                  <li><a href="#" data-icon="arrow-l"data-rel="back">上一頁</a></li>
+                  <li><a href="#page2" data-icon="arrow-r"data-rel="back">下一頁</a></li>
+                </ul>
+              </div>
+
         </div><!-- /footer -->
 
     </div><!-- /page -->
 
-    <!--第三頁-->
+    <!--第二頁-->
     <div data-role="page" id="page2">
+        <div data-role="panel" id="panel02">
+            <h2>各類型遊戲</h2>
+            <p>點擊下方了解各個遊戲吧!</p>
+            
+        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">ARPG(動作角色扮演)</a>
+        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MOBA (多人線上戰術擂台)</a>
+        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
+        <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
+        </div> 
 
         <div data-role="header">
             <a href="#main" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
             <h1>MOBA (多人線上戰術擂台)</h1>
 
-            <div data-role="panel" id="panel02">
-                <h2>各類型遊戲</h2>
-                <p>點擊下方了解各個遊戲吧!</p>
-                
-            <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">ARPG(動作角色扮演)</a>
-            <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MOBA (多人線上戰術擂台)</a>
-            <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
-            <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
-            </div> 
+            
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
