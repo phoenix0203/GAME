@@ -6,15 +6,17 @@
     <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
     <style>
     #main{
         text-align: center;
     }
-
-    
-
-
-
+    #page2{
+        text-align: center;
+    }
+    #page3{
+        text-align: center;
+    }
     </style>
     
     
@@ -33,15 +35,7 @@
         <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
         <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
         </div> 
-        <div data-role="panel" id="panel03">
-            <h2>各類型遊戲</h2>
-            <p>點擊下方了解各個遊戲吧!</p>
-            
-        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">ACT (動作類遊戲)</a>
-        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">AVG (冒險類遊戲)</a>
-        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">PUZ (休閒益智類遊戲)</a>
-        <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">SLG (策略類遊戲)</a>
-        </div> 
+       
         <div data-role="header">
  
             <h1>GAME</h1>
@@ -55,9 +49,7 @@
             <h2>線上遊戲</h2>
             <p>這邊跟各位介紹一下線上遊戲類型吧!</p>
         <a href="#panel01" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
-            <h2>手機遊戲</h2>
-            <p>這邊跟各位介紹一下手機遊戲類型吧!</p>
-        <a href="#panel03" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
+            
     </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -82,17 +74,14 @@
             <h2>各類型遊戲</h2>
             <p>點擊下方了解各個遊戲吧!</p>
             
-        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">ARPG(動作角色扮演)</a>
-        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MOBA (多人線上戰術擂台)</a>
-        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
+        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">RPG(角色扮演遊戲)</a>
         <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
+        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
+        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MOBA (多人線上戰術擂台)</a>
         </div> 
 
-        <div data-role="header">
-            <a href="#main" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
-            <h1>MOBA (多人線上戰術擂台)</h1>
-
-            
+        <div data-role="header">    
+            <h1>MOBA (多人線上戰術擂台)</h1>   
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
@@ -103,40 +92,169 @@
             <div data-role="collapsible">
                 <h1>英雄聯盟</h1>
                 <p>《英雄聯盟》是由Riot Games開發及發行的一款多人線上戰術擂台遊戲，遊戲為免費模式進行並提供付費道具服務。該遊戲是受到《魔獸爭霸III：寒冰霸權》中一個名為DotA第三方自定義地圖啟發而誕生，且至今仍不斷定期更新。</p>   
+                <ul data-role="listview" data-inset="true">
+                    
+                    <li><a href="https://www.4gamers.com.tw/news/detail/44892/league-of-legends-2020-worlds-information">
+                        <img src="img/03.jpg">
+                    <h2>世界賽</h2>
+                    <p>資訊網址</p></a>
+                    </li>
+                
+                
+                    <li><a href="https://universe.leagueoflegends.com/zh_TW/%E2%80%8B">
+                        <img src="img/02.jpg">
+                    <h2>英雄聯盟</h2>
+                    <p>角色故事</p></a>
+                    </li>
+
+                </ul>
+            
+            </div>
+
+            <div data-role="collapsible">
+                <h1>Dota2</h1>
+                <p>《Dota 2》是一款由Valve開發免費的多人線上戰鬥競技類遊戲。2011年Dota 2開始在Windows平台上進行測試，它的前身《DotA》是《魔獸爭霸III》及擴展版本寒冰霸權中的一張自訂遊戲地圖。截至2019年6月，Dota 2支援Windows系統、MacOS系統及Linux系統。</p>   
+                <ul data-role="listview" data-inset="true">
+                    
+                    <li><a href="https://ggscore.com/zh/dota-2/tournaments">
+                        <img src="img/05.jpg">
+                    <h2>世界賽</h2>
+                    <p>資訊網址</p></a>
+                    </li>
+                
+                
+                    <li><a href="https://www.dota2.com.cn/main.htm">
+                        <img src="img/04.jpg">
+                    <h2>Dota2</h2>
+                    <p>官方網站</p></a>
+                    </li>
+
+                </ul>
+            
+            </div>
+
+            <div data-role="collapsible">
+                <h1>傳說對決</h1>
+                <p>《傳說對決》是一款5v5多人線上戰鬥技術型遊戲。是Garena 與天美工作室群共同開發，於2016年10月1日起在Android平台進行封閉測試，並於兩週後正式上市，開放下載。2017年7月啟動GCS職業聯賽。2018年宣布成為2018年亞洲運動會電子競技比賽六款遊戲其中之一。</p>   
+                <ul data-role="listview" data-inset="true">
+                    
+                    <li><a href="https://esports.moba.garena.tw/gcs/playoffs/2020summer">
+                        <img src="img/07.jpg">
+                    <h2>世界賽</h2>
+                    <p>資訊網址</p></a>
+                    </li>
+                
+                
+                    <li><a href="https://moba.garena.tw/">
+                        <img src="img/06.jpg">
+                    <h2>傳說對決</h2>
+                    <p>官方網站</p></a>
+                    </li>
+
+                </ul>
+            
             </div>
             <a href="#panel02" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
         </div><!-- /content -->
 
-        <div data-role="footer">
+        <div data-role="footer" data-position="fixed">
 
             <h4>Copyright &copy;1108211061@wenzao DACM</h4>
 
+            <div data-role="navbar">
+                <ul>
+                  <li><a href="#main"data-icon="home">主頁</a></li>
+                  <li><a href="#" data-icon="arrow-l"data-rel="back">上一頁</a></li>
+                  <li><a href="#page3" data-icon="arrow-r"data-rel="back">下一頁</a></li>
+                </ul>
+            </div>
+
         </div><!-- /footer -->
-        <!--第三頁-->
+    </div><!-- /page -->
+
+    
+    <!--第二頁-->
     <div data-role="page" id="page3">
+        <div data-role="panel" id="panel03">
+            <h2>各類型遊戲</h2>
+            <p>點擊下方了解各個遊戲吧!</p>
+            
+        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MOBA (多人線上戰術擂台)</a>
+        <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
+        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MMORPG(大型多人線上角色扮演遊戲)</a>
+        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">ARPG(動作角色扮演)</a>
+        </div> 
 
-        <div data-role="header">
-            <a href="#main" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
-            <h1>ARPG(動作角色扮演)</h1>
-
+        <div data-role="header">    
+            <h1>RPG (角色扮演遊戲)</h1>   
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <ol data-role="listview">
                 <h1>說明</h1>
-                <P>動作角色扮演遊戲（Action Role Playing Game）。同時具備動作遊戲與角色扮演遊戲要素，要求戰鬥場景的及時處理、角色成長概念的遊戲。</P>
+                <P>是一種遊戲類型，在遊戲中，玩家扮演虛擬世界中的一個或者幾個角色進行遊戲，玩家通過操控遊戲角色與敵人戰鬥，提升等級、收集裝備和完成遊戲設置的任務，並體驗劇情。通常這類遊戲都是由玩家扮演角色在遊戲世界中漫遊，而一路上的各種遭遇（如戰鬥、交談、會見重要人物等）則是玩家人物成長及遊戲進行的重要關鍵所在。</P>
             <h1>遊戲推薦</h1>
             <div data-role="collapsible">
-                <h1>暗黑破壞神</h1>
-                <p>《暗黑破壞神》（英語：Diablo）是由美國暴雪娛樂開發的系列動作角色扮演砍殺遊戲系列產品及其周邊小說等。截止2012年5月30日，該系列產品已在全球範圍內售出2480+萬份。[2]該系列的核心遊戲包括《暗黑破壞神》、《暗黑破壞神II》及《暗黑破壞神III》，所有這三款都是動作角色扮演遊戲。資料片包括由第三方公司雪樂山開發的《暗黑破壞神》的資料片《地獄火》，及暴雪開發的《毀滅之王》、《奪魂之鐮》。資料片的內容是增加遊戲可探索元素。</p>   
+                <h1>魔界戰記 4 Return</h1>
+                <p>《魔界戰記》是日本廠商日本一的招牌戰略PRG。因為是戰棋類遊戲，如果不諳日文基本上很難入手，而廠商早於PSP時代已經將《魔界戰記》翻譯至中文版，也因此有很多香港玩家接觸過並深愛此作。</p>   
+                <ul data-role="listview" data-inset="true">
+                
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uyln054yOzs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <li><a href="http://asia.sega.com/disgaea/cht/4return/">
+                        <img src="img/09.jpg">
+                    <h2>魔界戰記 4 Return</h2>
+                    <p>資訊網站</p></a>
+                    </li>
+                </ul>
+            
             </div>
+
+            <div data-role="collapsible">
+                <h1>博德之門2</h1>
+                <p>博德之門2的故事和遊戲無法阻擋讓它最好的rpg之一。 續集甚至超過了原標題的聲望。</p>   
+                <ul data-role="listview" data-inset="true">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rk-VsEsK1tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <li><a href="https://home.gamer.com.tw/creationDetail.php?sn=2724771">
+                        <img src="img/10.jpg">
+                    <h2>博德之門2</h2>
+                    <p>遊玩心得</p></a>
+                    </li>
+                </ul>
+            
+            </div>
+
+            <div data-role="collapsible">
+                <h1>新楓之谷</h1>
+                <p>《新楓之谷》是一款橫向捲軸平面動作操作的免費大型多人線上角色扮演遊戲，由韓國Wizet開發。</p>   
+                <ul data-role="listview" data-inset="true">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/opyckOx-bI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <li><a href="https://tw.beanfun.com/maplestory/main">
+                        <img src="img/11.jpg">
+                    <h2>楓之谷</h2>
+                    <p>官方網站</p></a>
+                    </li>
+
+                </ul>
+            
+            </div>
+            <a href="#panel03" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
         </div><!-- /content -->
 
-        <div data-role="footer">
+        <div data-role="footer" data-position="fixed">
 
             <h4>Copyright &copy;1108211061@wenzao DACM</h4>
 
+            <div data-role="navbar">
+                <ul>
+                  <li><a href="#main"data-icon="home">主頁</a></li>
+                  <li><a href="#" data-icon="arrow-l"data-rel="back">上一頁</a></li>
+                  <li><a href="#page4" data-icon="arrow-r"data-rel="back">下一頁</a></li>
+                </ul>
+            </div>
+
         </div><!-- /footer -->
-    
+    </div><!-- /page -->
+
 </body>
 </html>
