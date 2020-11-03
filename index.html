@@ -36,6 +36,19 @@
     .ui-footer {
         font-family: 'Syne Mono', monospace;
 }
+.video-wrapper{
+        position: relative;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0; 
+        width: 100%;
+        height: 100%;
+    }
     </style>
     
     
@@ -45,43 +58,51 @@
     
     <!--第一頁-->
     <div data-role="page" id="main">
-        <div data-role="panel" id="panel01">
-            <h2>各類型遊戲</h2>
-            <p>點擊下方了解各個遊戲吧!</p>
-            
-        <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">MOBA (多人線上戰術擂台)</a>
-        <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">RPG(角色扮演遊戲)</a>
-        <a href="#page5" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FTG(格鬥)</a>
-        <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">FPS(第一人稱射擊遊戲)</a>
-        </div> 
+      
        
         <div data-role="header">
  
             <h1>GAME</h1>
+            
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
+            <h1>遊戲</h1>
 
-            <img src="img/01.jpg"alt=""style="display:block; margin:auto;">
+            <img src="img/01.jpg" width=100%; alt=""style="display:block; margin:auto; ">
 
-        <h1>遊戲</h1>
-            <h2>線上遊戲</h2>
+
+
             <p>這邊跟各位介紹一下線上遊戲類型吧!</p>
-        <a href="#panel01" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
-            
+
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#page2">
+                <h2>MOBA</h2>
+                <p>多人線上戰術擂台</p></a>
+                </li>
+                <li><a href="#page3">
+                <h2>RPG</h2>
+                <p>角色扮演遊戲</p></a>
+                </li>
+                <li><a href="#page4">
+                <h2>FPS</h2>
+                <p>第一人稱射擊遊戲</p></a>
+                </li>
+                <li><a href="#page5">
+                <h2>FTG</h2>
+                <p>格鬥</p></a>
+                </li>
+            </ul>
+
+
+           
     </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
 
-            <h4>Copyright &copy;1108211061@gap.wzu.edu.tw</h4>
+            <h4>Copyright&copy;1108211061@gap.wzu.edu.tw</h4>
 
-            <div data-role="navbar">
-                <ul>
-                  <li><a href="#main"data-icon="home">主頁</a></li>
-                  <li><a href="#" data-icon="arrow-l"data-rel="back">上一頁</a></li>
-                  <li><a href="#page2" data-icon="arrow-r">下一頁</a></li>
-                </ul>
-              </div>
+           
 
         </div><!-- /footer -->
 
@@ -104,17 +125,18 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <ol data-role="listview">
+
                 <h1>說明</h1>
                 <P>多人線上戰鬥競技場遊戲（MOBA，multiplayer online battle arena）或稱作多人線上戰鬥擂台遊戲，又可定義為動作即時戰略遊戲（ARTS，action real-time strategy）。玩家被分為兩隊，通常每個玩家只能控制其中一隊中的一名角色，以打垮對方隊伍的陣地建築為勝利條件。</P>
             <h1>遊戲推薦</h1>
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
             <div data-role="collapsible">
                 <h1>英雄聯盟</h1>
                 <p>《英雄聯盟》是由Riot Games開發及發行的一款多人線上戰術擂台遊戲，遊戲為免費模式進行並提供付費道具服務。該遊戲是受到《魔獸爭霸III：寒冰霸權》中一個名為DotA第三方自定義地圖啟發而誕生，且至今仍不斷定期更新。</p>   
                 <ul data-role="listview" data-inset="true">
                     
                     <li><a href="https://www.4gamers.com.tw/news/detail/44892/league-of-legends-2020-worlds-information">
-                        <img src="img/03.jpg">
+                        <img src="img/03.jpg"width=100%>
                     <h2>世界賽</h2>
                     <p>資訊網址</p></a>
                     </li>
@@ -173,12 +195,13 @@
                 </ul>
             
             </div>
+        </div>
             <a href="#panel02" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
 
-            <h4>Copyright &copy;1108211061@wenzao DACM</h4>
+            <h4>Copyright&copy;1108211061@wenzao DACM</h4>
 
             <div data-role="navbar">
                 <ul>
@@ -209,21 +232,25 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-            <ol data-role="listview">
+           
                 <h1>說明</h1>
                 <P>是一種遊戲類型，在遊戲中，玩家扮演虛擬世界中的一個或者幾個角色進行遊戲，玩家通過操控遊戲角色與敵人戰鬥，提升等級、收集裝備和完成遊戲設置的任務，並體驗劇情。通常這類遊戲都是由玩家扮演角色在遊戲世界中漫遊，而一路上的各種遭遇（如戰鬥、交談、會見重要人物等）則是玩家人物成長及遊戲進行的重要關鍵所在。</P>
             <h1>遊戲推薦</h1>
+            <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
             <div data-role="collapsible">
                 <h1>魔界戰記 4 Return</h1>
                 <p>《魔界戰記》是日本廠商日本一的招牌戰略PRG。因為是戰棋類遊戲，如果不諳日文基本上很難入手，而廠商早於PSP時代已經將《魔界戰記》翻譯至中文版，也因此有很多香港玩家接觸過並深愛此作。</p>   
                 <ul data-role="listview" data-inset="true">
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Uyln054yOzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uyln054yOzs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <li><a href="http://asia.sega.com/disgaea/cht/4return/">
                         <img src="img/09.jpg">
                     <h2>魔界戰記 4 Return</h2>
                     <p>資訊網站</p></a>
                     </li>
+
                 </ul>
             
             </div>
@@ -232,7 +259,9 @@
                 <h1>博德之門2</h1>
                 <p>博德之門2的故事和遊戲無法阻擋讓它最好的rpg之一。 續集甚至超過了原標題的聲望。</p>   
                 <ul data-role="listview" data-inset="true">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/rk-VsEsK1tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/rk-VsEsK1tw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
 
                     <li><a href="https://home.gamer.com.tw/creationDetail.php?sn=2724771">
                         <img src="img/10.jpg">
@@ -241,13 +270,16 @@
                     </li>
                 </ul>
             
+           
             </div>
-
             <div data-role="collapsible">
                 <h1>新楓之谷</h1>
                 <p>《新楓之谷》是一款橫向捲軸平面動作操作的免費大型多人線上角色扮演遊戲，由韓國Wizet開發。</p>   
                 <ul data-role="listview" data-inset="true">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/opyckOx-bI8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video-wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/opyckOx-bI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                   
                     <li><a href="https://tw.beanfun.com/maplestory/main">
                         <img src="img/11.jpg">
                     <h2>楓之谷</h2>
@@ -257,12 +289,13 @@
                 </ul>
             
             </div>
+        </div>
             <a href="#panel03" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
 
-            <h4>Copyright &copy;1108211061@wenzao DACM</h4>
+            <h4>Copyright&copy;1108211061@wenzao DACM</h4>
 
             <div data-role="navbar">
                 <ul>
@@ -292,10 +325,11 @@
             </div><!-- /header -->
     
             <div role="main" class="ui-content">
-                <ol data-role="listview">
+               
                     <h1>說明</h1>
                     <P>是以玩家的第一人稱視角為主視角進行的射擊類電子遊戲的總稱，通常需要使用槍械或其他武器進行戰鬥。玩家會直接從遊戲的主人公的眼中觀察周圍環境，並進行射擊、運動、對話等等活動。大部分第一人稱射擊遊戲會採用三維或偽三維技術來使玩家獲得身臨其境的體驗，並實現多人遊戲的需求。</P>
                 <h1>遊戲推薦</h1>
+                <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
                 <div data-role="collapsible">
                     <h1>絕地求生 PUBG</h1>
                     <p>《絕地求生》，是一款由韓國電子遊戲開發商魁匠團旗下的PUBG公司所開發及發行的多人制大逃殺遊戲。</p>   
@@ -356,12 +390,13 @@
                     </ul>
                 
                 </div>
+            </div>
                 <a href="#panel04" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
             </div><!-- /content -->
     
             <div data-role="footer" data-position="fixed">
     
-                <h4>Copyright &copy;1108211061@wenzao DACM</h4>
+                <h4>Copyright&copy;1108211061@wenzao DACM</h4>
     
                 <div data-role="navbar">
                     <ul>
@@ -393,16 +428,18 @@
             </div><!-- /header -->
     
             <div role="main" class="ui-content">
-                <ol data-role="listview">
+                
                     <h1>說明</h1>
                     <P>是電子遊戲類型之一，玩家操縱螢幕上的自己角色和對手進行近身格鬥。這些角色傾向於設計成實力均衡，並無像一般動作角色扮演遊戲有等級或裝備等強度差異。 我方和敵方角色在某個舞台以數個回合較勁。</P>
                 <h1>遊戲推薦</h1>
+                <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
                 <div data-role="collapsible">
                     <h1>拳皇系列</h1>
                     <p>拳皇是日本SNK電子遊戲公司於1994年開始推出的格鬥遊戲系列，除拳皇原創角色之外，亦集合過往餓狼傳說、龍虎之拳等大作角色，令拳皇人物非常豊富，之後亦成為日本最知名的格鬥遊戲之一，幾乎每年推出一部，並以相應的年份命名。</p>   
                     <ul data-role="listview" data-inset="true">
-
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D2zoGX4jRGY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/D2zoGX4jRGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         <li><a href="https://kof-world.wegames.com.tw/site/index/source/event">
                             <img src="img/18.jpg">
                         <h2>拳皇</h2>
@@ -416,8 +453,10 @@
                     <h1>鐵拳系列</h1>
                     <p>鐵拳是南夢宮發行的一款3D格鬥電玩遊戲系列。1994年鐵拳首作在大型電玩機台上登場，成功累積人氣後也陸續發展到多個家用遊戲機平台上。</p>   
                     <ul data-role="listview" data-inset="true">
-                        
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LLHQ1P5Mq18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/LLHQ1P5Mq18" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                       
                         <li><a href="https://www.tekken-official.jp/">
                             <img src="img/19.jpg">
                         <h2>鐵拳系列</h2>
@@ -427,13 +466,15 @@
                     </ul>
                 
                 </div>
-    
+            
                 <div data-role="collapsible">
                     <h1>街頭霸王</h1>
                     <p>是一個流行的格鬥遊戲系列，剛開始在日本卡普空公司1987年推出的投錢遊玩大型機台格鬥遊戲街頭霸王，之後陸續推出後續版本，也有出品日本的動畫卡通和歐洲美國的真人飾演電影。</p>   
                     <ul data-role="listview" data-inset="true">
+                        <div class="video-wrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/VjoRD6IZXzM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                         
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VjoRD6IZXzM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <li><a href="https://jieba.qq.com/">
                             <img src="img/20.jpg">
                         <h2>街頭霸王</h2>
@@ -443,12 +484,13 @@
                     </ul>
                 
                 </div>
+            </div>
                 <a href="#panel05" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">點點我</a>
             </div><!-- /content -->
     
             <div data-role="footer" data-position="fixed">
     
-                <h4>Copyright &copy;1108211061@wenzao DACM</h4>
+                <h4>Copyright&copy;1108211061@wenzao DACM</h4>
     
                 <div data-role="navbar">
                     <ul>
